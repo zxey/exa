@@ -37,7 +37,7 @@ pub mod test {
 
     use users::User;
     use users::mock::MockUsers;
-    use ansi_term::Colour::*;
+    use ansi_term::Color::*;
     use ansi_term::Style;
 
 

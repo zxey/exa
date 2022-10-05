@@ -23,7 +23,7 @@ pub trait Colours {
 #[cfg(test)]
 pub mod test {
     use ansi_term::Style;
-    use ansi_term::Colour::*;
+    use ansi_term::Color::*;
 
     use super::Colours;
     use crate::output::cell::TextCell;

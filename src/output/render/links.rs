@@ -27,7 +27,7 @@ pub mod test {
     use crate::output::cell::{TextCell, DisplayWidth};
     use crate::fs::fields as f;
 
-    use ansi_term::Colour::*;
+    use ansi_term::Color::*;
     use ansi_term::Style;
     use locale;
 

@@ -95,7 +95,7 @@ pub mod test {
     use crate::fs::fields as f;
 
     use locale::Numeric as NumericLocale;
-    use ansi_term::Colour::*;
+    use ansi_term::Color::*;
     use ansi_term::Style;
     use number_prefix::Prefix;
 

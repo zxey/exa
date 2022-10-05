@@ -67,7 +67,7 @@ DISPLAY OPTIONS
 Valid settings are ‘`always`’, ‘`automatic`’, and ‘`never`’.
 
 `--color-scale`, `--colour-scale`
-: Colour file sizes on a scale.
+: Color file sizes on a scale.
 
 `--icons`
 : Display icons next to file names.

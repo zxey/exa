@@ -106,7 +106,7 @@ impl FileExtensions {
 
 impl FileColours for FileExtensions {
     fn colour_file(&self, file: &File<'_>) -> Option<Style> {
-        use ansi_term::Colour::*;
+        use ansi_term::Color::*;
 
         Some(match file {
             f if self.is_temp(f)        => Fixed(244).normal(),

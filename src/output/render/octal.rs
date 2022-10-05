@@ -26,7 +26,7 @@ pub mod test {
     use crate::output::cell::TextCell;
     use crate::fs::fields as f;
 
-    use ansi_term::Colour::*;
+    use ansi_term::Color::*;
 
 
     #[test]

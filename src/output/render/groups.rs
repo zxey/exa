@@ -54,7 +54,7 @@ pub mod test {
     use users::{User, Group};
     use users::mock::MockUsers;
     use users::os::unix::GroupExt;
-    use ansi_term::Colour::*;
+    use ansi_term::Color::*;
     use ansi_term::Style;
 
 

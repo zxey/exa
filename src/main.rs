@@ -27,7 +27,7 @@ use std::ffi::{OsStr, OsString};
 use std::io::{self, Write, ErrorKind};
 use std::path::{Component, PathBuf};
 
-use ansi_term::{ANSIStrings, Style};
+use ansi_term::{AnsiStrings, Style};
 
 use log::*;
 
@@ -219,7 +219,7 @@ impl<'args> Exa<'args> {
             if ! is_only_dir {
                 let mut bits = Vec::new();
                 escape(dir.path.display().to_string(), &mut bits, Style::default(), Style::default());
-                writeln!(&mut self.writer, "{}:", ANSIStrings(&bits))?;
+                writeln!(&mut self.writer, "{}:", AnsiStrings(&bits))?;
             }
 
             let mut children = Vec::new();

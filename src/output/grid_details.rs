@@ -2,7 +2,7 @@
 
 use std::io::{self, Write};
 
-use ansi_term::ANSIStrings;
+use ansi_term::AnsiStrings;
 use term_grid as grid;
 
 use crate::fs::{Dir, File};
@@ -261,7 +261,7 @@ impl<'a> Render<'a> {
                 for column in &columns {
                     if row < column.len() {
                         let cell = grid::Cell {
-                            contents: ANSIStrings(&column[row].contents).to_string(),
+                            contents: AnsiStrings(&column[row].contents).to_string(),
                             width:    *column[row].width,
                             alignment: grid::Alignment::Left,
                         };
@@ -275,7 +275,7 @@ impl<'a> Render<'a> {
             for column in &columns {
                 for cell in column.iter() {
                     let cell = grid::Cell {
-                        contents: ANSIStrings(&cell.contents).to_string(),
+                        contents: AnsiStrings(&cell.contents).to_string(),
                         width:    *cell.width,
                         alignment: grid::Alignment::Left,
                     };
