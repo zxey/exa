@@ -3,6 +3,12 @@
 version = 3
 
 [[package]]
+name = "arrayvec"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8da52d66c7071e2e3fa2a1e5c6d088fec47b593032b254f5e980de8ea54454d6"
+
+[[package]]
 name = "autocfg"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -199,8 +205,9 @@ checksum = "308d96db8debc727c3fd9744aac51751243420e46edf401010908da7f8d5e57c"
 [[package]]
 name = "nu-ansi-term"
 version = "0.46.0"
-source = "git+https://github.com/zxey/nu-ansi-term.git#ec9fc43e5c4780b63953806cb41fd2b2597f66ba"
+source = "git+https://github.com/zxey/nu-ansi-term.git?branch=hyperlink#9a377a3f21776c232a7db9f4fe3a65428259e532"
 dependencies = [
+ "arrayvec",
  "overload",
  "winapi",
 ]

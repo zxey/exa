@@ -276,6 +276,11 @@ impl<'a, 'dir, C: Colours> FileName<'a, 'dir, C> {
         let file_style = self.style();
         let mut bits = Vec::new();
 
+        let file_style = match self.file.path.canonicalize().ok() {
+            Some(path) => file_style.hyperlink(&format!("file://{}", path.display())),
+            None => file_style,
+        };
+
         escape(
             self.file.name.clone(),
             &mut bits,
